@@ -1,55 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>About Me</title>
 </head>
+
 <body>
-    <audio id="pagesong" autoplay allow="autoplay">
+    <audio id="pagesong" autoplay>
         <source src="audio/song.mp3" type="audio/mpeg">
     </audio>
-    <header>
-        <p>Welcome to this page about *Nathan Kloer*</p>
-        <nav class="navbar-fixed-top">
+    <header id="top">
+        <img class="landing" />
+        <nav class="sticky">
             <ul>
-                <li>
-                    <a href="#aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#career">Career</a>
-                </li>
-                <li>
-                    <a href="#hobbies">Hobbies</a>
-                </li>
-                <li>
-                    <a href="#contactme">Contact me</a>
-                </li>
-            </ul>
+                <a href="#top">Nathan Kloer</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#career">Career</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#contactme">Contact me</a>
+                <ul>
         </nav>
     </header>
     <!-- <audio controls autoplay>
         <source src="audio/song.mp3" type="audio/mpeg">
          Your Browser does not support this audio :(
     </audio> -->
-    <section>
+    <section id="aboutme">
+        <div id="container">
+            <br><br><br><br>
+            <h1>Nathan Kloer</h1>
+            <article class="aboutme">
+                <h2>About Me</h2>
+                <p style="text-align:justify">
+                    Hello, my name is Nathan Kloer. I have been coding for
+                    little over a year. I graduated in feburary from a coding
+                    bootcamp at Georgia Tech. I work for Quotum Tech as a Front
+                    End Developer. Before that I worked at Formetco, a digital
+                    billboard company as a call technician. I have experience
+                    as a social media content creater for Atlanta Eats, a TV show
+                    on PeachtreeTV that is based in Atlanta. I created and edited
+                    video footage to be used on Instagram and Facebook. Check out
+                    the nav above to browse my site.
+                </p>
+                <img src="images/me2.jpg" alt="me">
+            </article>
+        </div>
+    </section>
+    <section id="contactme">
         <article>
-            <img src="images/me2.jpg" alt="picture of me" />
-            <p id="aboutme">
-                Hello, my name is Nathan Kloer. I have been coding for 
-                little over a year. I graduated in feburary from a coding
-                bootcamp at Georgia Tech. I work for Quotum Tech as a Front
-                End Developer. Before that I worked at Formetco, a digital
-                billboard company as a call technician. I have experience
-                as a social media content creater for Atlanta Eats, a TV show
-                on PeachtreeTV that is based in Atlanta. I created and edited 
-                video footage to be used on Instagram and Facebook.
+            <br><br><br>
+            <h2>Contact Info:</h2>
+            <p>
+                Email: nathan.kloer@gmail.com<br>phone: 678:231-0269
             </p>
         </article>
     </section>
+    <section>
+        <img src="images/smudgebg.jpg" alt="picture of cat" />
+        <aside id="hobbies"><strong>Photo:</strong> My cat Smudge being his best self</aside>
+        <img src="images/smudgegif.gif" alt="Smudge Chasing his Tail" />
+    </section>
+    <section>
+        <div id="container">
+            <article class="hobbies">
+                <h2>Hobbies & Interests</h2>
+                <p>
+                    I have a cat named Smudge. He is two years old and was born to my
+                    roommate's cat, Princess. He loves chasing his tail (pictured above)
+                    My favorite bands right now are Guerilla Toss, Slothrust, and Motherborg.
+                    I love films and my favorite movie is Snatch by Guy Ritchie. I've made a Favorite films
+                    Quiz previously, and you are welcome to
+                    <a href="https://nathankloer.github.io/TriviaGame/">give it a try!</a>
+                    I really enjoy the movie theatre experience, and will sometimes go
+                    see a movie alone. The last film I saw was Joker.
+                    <br><br>
+                    When I feel like video games, I am either playing Leauge of Legends or
+                    Outer Worlds. I really enjoy playing board games as well and love trying
+                    new games. I also play Dungeons & Dragons when I can. In the past I used to
+                    play so much, that I would get my room and ticket to Dragoncon free by running 
+                    games for players that >weekend. My first high level character was a cavalier named "Maliphian".
+                </p>
+                <img src="images/me3.jpg" alt="picture of me" />
+            </article>
+        </div>
+    </section>
+    <section>
+        <article>
+            <h2>More Info</h2>
+            <p>
+                Here are some pictures of when I worked on Atlanta Eats as their social media video editor.
+                
+            </p>
+            <img src="images/work1.jpg" />
+            <img src="images/work2.jpg" />
+        </article>
+    </section>
     <footer>
-
+        <p>Nathan Kloer, Copyright &copy; 2019</p>
     </footer>
 </body>
+
 </html>
