@@ -10,25 +10,20 @@
 </head>
 
 <body>
-        
     <header id="top">
         <img class="landing" />
+        <!-- nav -->
         <nav class="sticky">
             <ul>
-                <a href="#top">Nathan Kloer</a>
+                <a href="#top">NK</a>
                 <a href="#aboutme">About Me</a>
-                <a href="#career">Career</a>
                 <a href="#hobbies">Hobbies</a>
                 <a href="#contactme">Contact me</a>
                 <ul>
         </nav>
     </header>
-    <!-- <audio controls autoplay>
-        <source src="audio/song.mp3" type="audio/mpeg">
-         Your Browser does not support this audio :(
-    </audio> -->
-    <section id="aboutme">
-        <div id="container">
+    <div id="scroll">
+        <section id="aboutme">
             <br><br><br><br>
             <h1>Nathan Kloer</h1>
             <article class="aboutme">
@@ -44,9 +39,9 @@
                     video footage to be used on Instagram and Facebook. Check out
                     the nav above to browse my site.
                 </p>
-                <img src="images/me2.jpg" alt="me">
             </article>
-        </div>
+            <figure><img src="images/me2.jpg" alt="me"></figure>
+    </div>
     </section>
     <section id="contactme">
         <article>
@@ -58,31 +53,34 @@
         </article>
     </section>
     <section>
-        <img src="images/smudgebg.jpg" alt="picture of cat" />
-        <aside id="hobbies"><strong>Photo:</strong> My cat Smudge being his best self</aside>
-        <img src="images/smudgegif.gif" alt="Smudge Chasing his Tail" />
+        <figure><img id="cat" src="images/smudgebg.jpg" alt="picture of cat" /></figure>
+        <dialog open>
+            <strong>Photos:</strong>My cat Smudge being his best self
+        </dialog>
+        <br><br><br>
+        <figure><img id="cat" src="images/smudgegif.gif" alt="Smudge Chasing his Tail" /></figure>
     </section>
-    <section>
+    <section id="hobbies">
         <div id="container">
             <article class="hobbies">
+
                 <h2>Hobbies & Interests</h2>
                 <p>
                     I have a cat named Smudge. He is two years old and was born to my
                     roommate's cat, Princess. He loves chasing his tail (pictured above)
-                    My favorite bands right now are Guerilla Toss, Slothrust, and Motherborg.
+                    Have you heard Rage Against the Machine is back together! Amazing Band.
                     I love films and my favorite movie is Snatch by Guy Ritchie. I've made a Favorite films
                     Quiz previously, and you are welcome to
                     <a href="https://nathankloer.github.io/TriviaGame/">give it a try!</a>
-                    I really enjoy the movie theatre experience, and will sometimes go
-                    see a movie alone. The last film I saw was Joker.
+                    The last film I saw was Joker.
                     <br><br>
                     When I feel like video games, I am either playing Leauge of Legends or
                     Outer Worlds. I really enjoy playing board games as well and love trying
                     new games. I also play Dungeons & Dragons when I can. In the past I used to
-                    play so much, that I would get my room and ticket to Dragoncon free by running 
+                    play so much, that I would get my room and ticket to Dragoncon free by running
                     games for players that >weekend. My first high level character was a cavalier named "Maliphian".
                 </p>
-                <img src="images/me3.jpg" alt="picture of me" />
+                <figure><img src="images/me3.jpg" alt="picture of me" /></figure>
             </article>
         </div>
     </section>
@@ -91,17 +89,19 @@
             <h2>More Info</h2>
             <p>
                 Here are some pictures of when I worked on Atlanta Eats as their social media video editor.
-
             </p>
-            <img src="images/work1.jpg" />
-            <img src="images/work2.jpg" />
+            <figure><img src="images/work1.jpg" />
+                <aside><strong>Photo:</strong>Onsite at a Tin Lizzy's</aside><img src="images/work2.jpg" />
+            </figure>
         </article>
     </section>
     <footer>
-            <audio id="pagesong" preload autoplay controls><source src="audio/song.mp3" type="audio/mpeg">
-                </audio>
-            <p>Nathan Kloer, Copyright &copy; 2019<br>song: Vanillia - Summer</p> 
+        <audio id="pagesong" preload autoplay controls>
+            <source src="audio/song.mp3" type="audio/mpeg">
+        </audio>
+        <p>Nathan Kloer, Copyright &copy; 2019<br>song: Vanillia - Summer</p>
     </footer>
+    </div>
 </body>
 
 </html>
