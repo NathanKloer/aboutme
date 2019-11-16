@@ -1,1 +1,1 @@
-# aboutme
+This is my About Me assignment for week 1

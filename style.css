@@ -5,6 +5,8 @@ body {
 
 /* nav */
 nav {
+    display:flex;
+    justify-content: center;
     overflow: hidden;
     background-color: #333;
     position: fixed;
@@ -15,11 +17,17 @@ nav {
 }
 
 nav ul {
-    margin: 0;
-    margin-left: 10%;
+    display: flex;
+    margin: auto;
+    padding: auto;
 }
 
-nav ul a {
+/*reset nav transition to 0*/
+/* nav {
+    transition: 0s;
+} */
+
+.navitem {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -28,9 +36,15 @@ nav ul a {
     text-decoration: none;
     font-size: 17px;
 }
-/*each article section*/
+
+.navitem:hover {
+    transition: 0.4s;
+    background-color: #fff;
+    color: #333;
+}
+
 section {
-    border-radius: 20px;
+    border-radius: 8px;
     max-width: 900px;
     margin: auto;
     background-color: lightblue;
@@ -39,7 +53,8 @@ section {
 section img {
     padding-top: 10px;
     position: relative;
-    border-radius:100px;
+    object-fit: cover;
+    width: 100%;
 }
 
 h1 {
@@ -67,7 +82,7 @@ footer #pagesong {
 
 .landing {
     background-image: url("images/oncouch.jpg"); 
-    background-color: #fff; 
+    background-color: #333; 
     height: 500px;
     width: 100%;
     max-width: auto;
@@ -75,6 +90,7 @@ footer #pagesong {
     background-repeat: no-repeat; 
     background-size: cover;
     margin: 0 0 0 0;
+    padding-bottom: 0;
 }
 
 img {
@@ -82,7 +98,7 @@ img {
     height: auto;
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 40px;
+    padding-bottom: 40px;
     position: relative;
 }
 
@@ -95,4 +111,22 @@ p {
 
 .aboutme img {
     margin:auto;
+}
+
+article {
+    margin: 10px 10px 10px 10px;
+    padding: 40px 25px 25px 0px;
+}
+
+article p {
+    text-align: justify;
+}
+
+.gif {
+    float: center;
+    object-fit: cover;
+    object-position: center bottom;
+
+    max-width: 800px;
+    height: 800px;
 }
