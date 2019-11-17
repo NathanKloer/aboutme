@@ -9,8 +9,16 @@ body {
     width: 100%
 }
 
-@media only screen and (max-width: 600px) {
+p {
+    padding: 1rem;
+    padding-left: 2rem;
+    margin: 0;
+}
 
+@media only screen and (max-width: 1200px) {
+    article {
+        margin: auto 5% auto auto;
+    }
   }
 
 content {
@@ -100,7 +108,14 @@ article {
     margin: auto;
     background-color: lightblue;
 }
-/*857*/
+
+@media only screen and (max-width: 1200px) {
+    article {  
+        max-width: 70%;
+        margin-right: 5px;
+    }
+  }
+
 @media only screen and (max-width: 767px) {
     article {
         max-width: 100%;
@@ -114,6 +129,10 @@ section img {
     width: 100%;
 }
 
+
+/*857*/
+
+
 /*email box - when starting javascript, will have to seperate #contactme & #contactmemob into class and ID*/
 
 #contactme {
@@ -121,10 +140,8 @@ section img {
     border-radius: 8px;
     padding: 8px;
     float: left;
-    width: 20%;
-    margin: auto;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 24%;
+    margin: auto 0 auto 1%;
     position: sticky;
     top: 10%
 }
@@ -196,9 +213,45 @@ section img {
     position: sticky;
     top: 10%
 }
-#myprojectsmob {
-    none
+
+#myprojects article p {
+    width:100%;
+    margin: 0;
+    padding: 0;
 }
+
+#myprojectsmob {
+    display:none
+}
+
+@media only screen and (max-width: 1200px) {
+    #myprojects {
+        display: none
+    }
+    #myprojectsmob {
+        display: block;
+        background-color: lightblue;
+        border-radius: 8px;
+        padding: 8px;
+        float: none;
+        max-width: 68.5%;
+        width: auto;
+        margin: auto 5px auto auto;
+        position: relative;
+        top: 10%
+    }
+    #myprojectsmob div p{
+        display: block;
+        padding: 0;
+        float: none;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        top: 10%
+    }
+
+
+  }
 
 @media only screen and (max-width: 767px) {
     #myprojects {
@@ -217,6 +270,12 @@ section img {
         top: 10%
     }
 }
+
+
+
+
+
+
 
 /*footer*/
 
@@ -261,13 +320,6 @@ img {
     margin-top: 0;
     padding-bottom: 40px;
     position: relative;
-}
-
-p {
-    padding: 1rem;
-    padding-left: 2rem;
-    margin: 0;
-    align-content: stretch;
 }
 
 .aboutme img {
