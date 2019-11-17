@@ -114,9 +114,9 @@ section img {
     width: 100%;
 }
 
-/*email box*/
+/*email box - when starting javascript, will have to seperate #contactme & #contactmemob into class and ID*/
 
-#emailme {
+#contactme {
     background-color: lightblue;
     border-radius: 8px;
     padding: 8px;
@@ -129,8 +129,15 @@ section img {
     top: 10%
 }
 
+#contactmemob {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
-    #emailme {
+    #contactme {
+        display: none;
+    }
+    #contactmemob {
         display: block;
         background-color: lightblue;
         border-radius: 8px;
@@ -144,12 +151,13 @@ section img {
     }
 }
 
-#emailme h2 {
+
+#contactme h2 {
     font-size: 14px;
     padding: 0;
 }
 
-#emailme p {
+#contactme p {
     margin-bottom: 10px;
     padding: 0;
 }
@@ -158,13 +166,6 @@ section img {
     background-color: navy;
     border: 6px solid navy;
 
-}
-
-.contactme {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 20px;
-    width: 100%;
 }
 
 #nameinput {
@@ -183,7 +184,7 @@ section img {
 }
 /*Rightside Dialog*/
 
-#rightside {
+#myprojects {
     background-color: lightblue;
     border-radius: 8px;
     padding: 8px;
@@ -194,6 +195,27 @@ section img {
     margin-right: 2%;
     position: sticky;
     top: 10%
+}
+#myprojectsmob {
+    none
+}
+
+@media only screen and (max-width: 767px) {
+    #myprojects {
+        display: none
+    }
+    #myprojectsmob {
+        display: block;
+        background-color: lightblue;
+        border-radius: 8px;
+        padding: 8px;
+        float: none;
+        max-width: 100%;
+        width: auto;
+        margin: 5% auto 5% auto;
+        position: relative;
+        top: 10%
+    }
 }
 
 /*footer*/
