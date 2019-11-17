@@ -29,7 +29,7 @@ h1 {
     font-family: Arial, sans-serif;
     font-weight: 800;
     padding: 1rem;
-    font-size: 400%;
+    font-size: 50%;
     text-align: center;
     margin: 0;
 }
@@ -133,15 +133,16 @@ section img {
 /*857*/
 
 
-/*email box - when starting javascript, will have to seperate #contactme & #contactmemob into class and ID*/
+/*email box 
+- when adding javascript, will have to seperate #contactme & #contactmemob into class and ID*/
 
 #contactme {
     background-color: lightblue;
     border-radius: 8px;
     padding: 8px;
     float: left;
-    width: 24%;
-    margin: auto 0 auto 1%;
+    width: 21%;
+    margin: auto 2% auto 1%;
     position: sticky;
     top: 10%
 }
@@ -149,6 +150,20 @@ section img {
 #contactmemob {
     display: none;
 }
+
+@media only screen and (max-width: 1200px) {
+    #contactme {
+        background-color: lightblue;
+        border-radius: 8px;
+        padding: 8px;
+        float: left;
+        width: 24%;
+        margin: auto 2% auto 1%;
+        position: sticky;
+        top: 10%
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
     #contactme {
