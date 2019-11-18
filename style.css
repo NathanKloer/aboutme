@@ -216,18 +216,37 @@ section img {
 }
 /*Rightside Dialog*/
 
+#avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: width 0.7s, height 0.7s;
+}
+
+#avatar:hover {
+    width: 200px;
+    height: 200px;
+}
+
 #myprojects {
     background-color: lightblue;
     border-radius: 8px;
     padding: 8px;
     float: right;
     width: 20%;
+    height: 365px;
     margin: auto;
     margin-left: 2%;
     margin-right: 2%;
     position: sticky;
-    top: 10%
+    top: 10%;
+    transition: height 0.7s;
 }
+
+#myprojects:hover {
+    height: 600px;
+}
+
 
 #myprojects article p {
     width:100%;
